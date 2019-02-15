@@ -1,0 +1,149 @@
+/*css Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End css Reset*/
+/*roots*/
+root:{
+	--blue : #007bff;
+}
+/*end roots*/
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+/*end fonts*/
+header{
+		width: 100%;
+		background-image: url(../images/bg-header.jpg);
+		background-size: cover;
+}
+/*navbar*/
+.navbar-expand-lg{
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(255,255,255,.3);
+	/*border-bottom: 1px solid #000;*/
+}
+.navbar .navbar-brand{
+	margin-left: 55px;
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Satisfy', cursive;
+	transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+}
+.navbar .navbar-brand:focus,
+ .navbar .navbar-brand:hover{
+ 	color: #fff;
+ 	text-shadow: 0 0 20px #fff;
+ }
+.navbar-nav{
+	margin: 0 auto;
+}
+
+.nav-item{
+	margin-right: 50px;
+}
+.navbar .navbar-nav .nav-link{
+	font-size: 25px;
+	color: #fff;
+	transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+}
+.navbar .navbar-nav .active>.nav-link, 
+.navbar .navbar-nav .nav-link.active,
+ .navbar .navbar-nav .nav-link.show,
+ .navbar .navbar-nav .show>.nav-link{
+ 	color: var(--blue);
+ }
+.navbar .navbar-nav .nav-link:focus,
+ .navbar .navbar-nav .nav-link:hover{
+ 	color: var(--blue);
+ }
+
+/*end navbar*/
+
+/*banner*/
+#banner{
+	padding: 35vh 0 ;
+	color: #fff;
+	
+}
+#banner .text{
+	width: 800px;
+	padding: 25px 0;
+	margin:0 auto;
+	background: rgba(0,0,0,.6);
+}
+#banner h1{
+	font-size: 50px;
+	font-family: 'Gloria Hallelujah', cursive;
+	padding-bottom: 15px;
+}
+#banner p{
+	font-size: 30px;
+}
+#banner button{
+	margin-top: 10px;
+	width: 150px;
+	padding: 15px 0;
+	border-radius: 15px;
+	background-color: #6B9AC8;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	outline: none;
+	transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+}
+#banner button:hover{
+	box-shadow: 0 0 20px #fff;
+
+}
